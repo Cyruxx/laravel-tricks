@@ -50,12 +50,20 @@ To get started and start making something of your own using this repository as a
 - Open up `app/config/database.php` and configure connection settings for your database.
 - Configure hostname in `bootstrap/start.php` file to match your machine's hostname:
 
+<<<<<<< HEAD
+=======
+    ```
+>>>>>>> 82a3b08... Added laravel-debugbar and laravel-ide-helper
     $env = $app->detectEnvironment(array(
 
         'local' => array('your-machine-name'), // Edit this line
 
     ));
+<<<<<<< HEAD
     
+=======
+    ```
+>>>>>>> 82a3b08... Added laravel-debugbar and laravel-ide-helper
 - If you want to use Github OAuth for login and registration, make sure to [create a Github application](https://github.com/settings/applications/new) first and provide its client ID and client secret to the config in `app/config/social.php`. Also make sure you're using `http://<your-site.com>/login/github` for Authorization callback URL
 
 After this simple configuration you can populate the database by running a couple commands shown below.
@@ -76,8 +84,15 @@ The Laravel debugbar and the Laravel IDE helper needs some extra updates:
 
 After you ran the three commands in the section above, add the following code to your `composer.json`'s `post-update-cmd`:
 
+<<<<<<< HEAD
             "php artisan debugbar:publish",
             "php artisan ide-helper:generate",
+=======
+    ```
+            "php artisan debugbar:publish",
+            "php artisan ide-helper:generate",
+    ```
+>>>>>>> 82a3b08... Added laravel-debugbar and laravel-ide-helper
 
 Once you are done, make sure to run `composer update --prefer-dist` in your project directory again.
 After each `composer update` the debugbar will now publish its assets and the ide-helper generates a new helper file for you.
