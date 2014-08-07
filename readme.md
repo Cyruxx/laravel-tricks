@@ -76,10 +76,8 @@ The Laravel debugbar and the Laravel IDE helper needs some extra updates:
 
 After you ran the three commands in the section above, add the following code to your `composer.json`'s `post-update-cmd`:
 
-    ```
             "php artisan debugbar:publish",
             "php artisan ide-helper:generate",
-    ```
 
 Once you are done, make sure to run `composer update --prefer-dist` in your project directory again.
 After each `composer update` the debugbar will now publish its assets and the ide-helper generates a new helper file for you.
